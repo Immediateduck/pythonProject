@@ -10,7 +10,9 @@ there are two boxes i use to make the equations
     FIRST MODE-
         the first mode can only perform commutative operations(like +,* etc)
         2 functions must be passed to the constructor op and rop.
-            op is the operation which the box performs(like lambda a,b : a+b)
+            op is the operation which the box performs like addition(argument should be a list)
             rop is the reverse operation of the given operation(like lambda a,b : a-b)
             for the op function must be passed through the wrapper function packageLambda() to create a new function (for my convenience)
-            which in turn should be passed instead of the op.(check the )
+            which in turn should be passed instead of the op.(check the creation of plus in main file to understand
+use the controller object to connect 2 boxes and voila the code works.
+sorry this prolly makes noo sense but i am a high schooler and this is my first github thing

@@ -1,3 +1,4 @@
+from operator_box import Operator
 class Variable():
     def __init__(self,name,value="nil"):
         self.hasvalue=False
@@ -8,7 +9,7 @@ class Variable():
         self.connectedBox="nil"
 
     def connectBox(self,box):
-        if self.connectedBox=="nil":
+        if self.connectedBox=="nil" and isinstance(box,Operator):
             self.connectedBox=box
         else:
             raise ValueError

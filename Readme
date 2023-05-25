@@ -2,4 +2,15 @@ first github project so sorry for any broken traditions.
 the main is the file where i test the code.
 there are two boxes i use to make the equations
 1) Variable
-    the variable box always connects to an instance 
+    the variable box always connects to a maximum of 2 boxes.it checks its connected boxes if they have a value
+    and then copies the value from them
+2) Operator
+    the operator box has 2 modes.only the second mode has not been coded as of now.when a new instance of operator box is created the first
+    argument passed in the constructor is a boolean.(True denotes that the first mode is selected)
+    FIRST MODE-
+        the first mode can only perform commutative operations(like +,* etc)
+        2 functions must be passed to the constructor op and rop.
+            op is the operation which the box performs(like lambda a,b : a+b)
+            rop is the reverse operation of the given operation(like lambda a,b : a-b)
+            for the op function must be passed through the wrapper function packageLambda() to create a new function (for my convenience)
+            which in turn should be passed instead of the op.(check the )
